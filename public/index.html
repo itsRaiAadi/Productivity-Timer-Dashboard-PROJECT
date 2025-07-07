@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRODUCTIVITY</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="flex items-center justify-center h-screen w-full">
+    <div
+      class="mainDiv bg-[#0f172a] w-4xl text-[#ffff] flex flex-col items-center justify-center p-4 outline-none border-none rounded-2xl"
+    >
+      <div class="headerDiv w-3xl flex flex-row items-center justify-between">
+        <h1 class="text-4xl">Productivity Dashboard</h1>
+        <button
+          id="toogleBtn"
+          class="p-2 bg-[#1e293b] text-[#ffffff] border-none outline-none rounded-[10px] cursor-pointer hover:scale-95 transition duration-175"
+        >
+          Thank You
+        </button>
+      </div>
+
+      <div
+        class="mainSection w-3xl flex flex-row items-center justify-between gap-10 mt-10"
+      >
+        <div
+          class="border-4 p-2 bg-[#ffffff] text-[#000000] border-none outline-none rounded-[10px] w-2xl min-h-max"
+        >
+          <div class="flex flex-col gap-2">
+            <h1 class="text-2xl">TO-DO List</h1>
+            <input
+              id="inputBox"
+              type="text"
+              class="border-[1px] outline-none p-1 rounded-[5px]"
+            />
+            <div class="flex flex-row justify-between">
+              <button
+                id="addBtn"
+                class="p-1 bg-[#22c55e] text-[#ffff] w-20 rounded-[10px] cursor-pointer hover:scale-95 transition duration-175"
+              >
+                Add
+              </button>
+              <button
+                id="deleteBtn"
+                class="p-1 bg-[#ef4444] text-[#ffff] w-20 rounded-[10px] cursor-pointer hover:scale-95 transition duration-175"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+          <div class="mt-2">
+            <ol id="list"></ol>
+          </div>
+        </div>
+        <div
+          class="border-4 p-2 bg-[#1e293b] text-[#000000] border-none outline-none rounded-[10px]"
+        >
+          <div class="flex flex-col gap-2 items-center justify-center">
+            <h1 class="text-2xl text-[#ffff]">Promodoro</h1>
+            <h1 class="text-2xl text-[#ffff]">Timer</h1>
+            <div
+              class="bg-[#ffff] h-25 w-30 rounded-2xl flex items-center justify-center"
+            >
+              <p class="text-3xl" id="timer">0s</p>
+            </div>
+            <button
+              id="startBtn"
+              class="p-2 bg-[#3b82f6] text-[#ffff] w-20 rounded-[10px] cursor-pointer hover:scale-95 transition duration-175"
+            >
+              Start
+            </button>
+          </div>
+        </div>
+        <div
+          class="p-2 flex flex-col gap-3 bg-[#1e293b] text-[#000000] border-none outline-none rounded-[10px] w-2xl min-h-max"
+        >
+          <h1 class="text-2xl text-[#ffffff]">Quote of the Day</h1>
+          <p class="text-[#ffffff]" id="randomQuote"></p>
+        </div>
+      </div>
+
+      <div
+        class="w-3xl flex flex-row items-center justify-between mt-10 p-3 bg-[#1e293b] rounded-[10px]"
+      >
+        <p class="text-2xl">Quote Generator</p>
+        <button
+          class="p-2 bg-[#3b82f6] text-[#ffff] w-30 rounded-[10px] cursor-pointer hover:scale-95 transition duration-175"
+          id="newQuoteBtn"
+        >
+          New Quote
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
